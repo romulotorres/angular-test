@@ -1,0 +1,23 @@
+<div class="row p-4">
+  <div *ngFor="let item of items.list" class="col-lg-4 col-md-6 col-sm-12 mb-4">
+    <div class="card">
+      <div class="card-body">
+        <ul class="list-unstyled">
+          <li><strong>Nome:</strong> {{item.name}}</li>
+          <li><strong>Função:</strong> {{item.function}}</li>
+          <li><strong>Email:</strong> {{item.email}}</li>
+        </ul>
+    </div>
+      <div class="card-footer">
+        <div class="d-flex justify-content-end">
+        <a href="#"><i class="bi bi-grid"></i></a>
+        <a href="#"><i class="bi bi-person-circle"></i></a>
+        <a href="#"><i class="bi bi-bell"></i></a>
+        <a href="#"><i class="bi bi-clock"></i></a>
+        <a href="#"><i class="bi bi-pencil-square"></i></a>
+        <a href="#"><i class="bi bi-trash"></i></a>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>

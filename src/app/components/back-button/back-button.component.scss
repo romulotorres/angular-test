@@ -1,0 +1,28 @@
+@import "../../../theme/custom-colors.scss";
+
+.back-button-square {
+  height: 48px;
+  width: 48px;
+  border: 1px solid $soft-blue;
+  border-radius: 6px;
+  border-width: 1px;
+}
+.back-button-square i {
+  font-size: 18px;
+  display: block;
+  text-align: center;
+  line-height: 48px;
+  color: $soft-blue;
+}
+
+.back-button-text {
+  margin-left: 25px;
+  color: $soft-blue;
+  font-family: Inter, Roboto, 'sans';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0px;
+  text-align: left;
+}

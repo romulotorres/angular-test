@@ -1,0 +1,30 @@
+<div id="page" role="main" class="container-fluid">
+  <div class="row align-items-center justify-content-between">
+    <div class="col-md">
+      <app-back-button></app-back-button>
+    </div>
+    <div class="col-md">
+      <app-breadcrumbs></app-breadcrumbs>
+    </div>
+  </div>
+  <section id="main-content">
+    <div id="form-container" class="row align-items-center justify-content-between">
+      <div class="col-md">
+        <h2 class="flex-fill" id="page-title">{{title}}</h2>
+      </div>
+      <div class="col-md col-auto mb-3">
+        <app-form-search [txtSearch]="txtSearch" (onSearch)="onSearch($event)"></app-form-search>
+      </div>
+      <div class="col-md col-auto mb-3">
+        <app-button
+          [label]="labelNewColaborador"
+          (onClick)="onClickNewColaborator()">
+        </app-button>
+      </div>
+    </div>
+    <div class="cards-container">
+      <app-grid [items]="data"></app-grid>
+      <app-pagination [countPages]="countPages" [currentPage]="currentPage" (onClick)="onClickPage($event)"></app-pagination>
+    </div>
+  </section>
+</div>

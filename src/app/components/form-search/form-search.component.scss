@@ -1,0 +1,15 @@
+@import "../../../theme/custom-colors.scss";
+
+.form-container{
+  width: 335px;
+}
+
+.input-search-preppend{
+  background: inherit;
+  border-right: none;
+  border-color: $light-gray;
+}
+
+.input-search {
+  border-left: none;
+}

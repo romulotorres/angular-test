@@ -1,0 +1,26 @@
+@import "../../../theme/custom-colors.scss";
+
+.my-paginate{
+  align-self: center;
+}
+.page-item{
+  margin: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.page-link{ 
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: $gray;
+}
+
+.page-item.active .page-link {
+  background-color: inherit;
+  border-color: $deep-blue;
+  color: $deep-blue;
+}

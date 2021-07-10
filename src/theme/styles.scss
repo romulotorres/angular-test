@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+  font-family: 'Inter', 'Roboto', 'mono' !important;
+}
+
+$theme-colors: (
+  "primary": #2E89FD
+);
+
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/bootstrap-icons/font/bootstrap-icons";
+@import "./custom-colors.scss";
+
+.btn-primary, .btn-primary:hover {
+  color: $white;
+  text-transform: uppercase;
+  font-family: 'Inter', 'Roboto', 'mono';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  align-items: center;
+  text-align: center;
+  line-height: 25px;
+}
+
+.form-control {
+  border-color: $light-gray;
+  font-size: 13px;
+  line-height: 25px;
+}
